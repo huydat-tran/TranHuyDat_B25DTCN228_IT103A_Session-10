@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url(./a90e60c0f63b6eb12e37b1db209a7028f01ae037.png);
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  line-height: 70px;
+}
+header::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+header h1 {
+  font-size: 56px;
+  text-transform: capitalize;
+}
+main {
+  background-color: #f8f5f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.main_content {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.main_content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_content p {
+  position: absolute;
+  z-index: 999;
+  color: rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+.title {
+  font-weight: bold;
+  font-size: larger;
+  text-transform: capitalize;
+}
+.main_content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+.signup {
+  background-color: #8b0000;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.signup h1 {
+  margin: 30px;
+}
+.signup_form {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.signup_form input {
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  width: 300px;
+  height: 54px;
+  margin: 10px;
+}
+.signup button {
+  border-radius: 20px;
+  color: #8b0000;
+  background-color: white;
+  width: 300px;
+  height: 54px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer {
+  color: white;
+  padding: 30px;
+  background-color: black;
+  text-align: center;
+}
